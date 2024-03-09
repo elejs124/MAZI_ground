@@ -1,0 +1,139 @@
+body{
+    /* 로그인 창 중앙 정렬 */
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+/* display flex 지정 */
+.flex{
+    display: flex;
+}
+
+/* 메인 박스 css, 가운데 정렬 */
+#main_Box{
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 로고 css */
+#sign_Logo>img{
+
+}
+
+/* 로그인 박스 css */
+#sign_Box{
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid gray;
+    width: 500px;
+    height: 540px;
+    position: relative;
+}
+
+/* 아이디 입력창 */
+#ID>input{
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+/* 비밀번호 입력창 */
+#password>input{
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+/* 로그인 버튼 */
+#login{
+    width: 350px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    background-color: rgb(18, 18, 32);
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+#login:hover{
+    cursor: pointer;
+}
+/* 회원가입, 비밀번호 찾기 */
+#sign_Up{
+    margin-right: 10px;
+}
+#sign_Up:hover{
+    cursor: pointer;
+}
+#sign_Find{
+    margin-left: 10px;
+}
+#sign_Find:hover{
+    cursor: pointer;
+}
+
+#bar{
+    width:95%;
+    background-color: gray;
+    height:2px;
+    position: absolute;
+    top: 61.5%;
+}
+
+/* 간편로그인 */
+#easy_Login{
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+#easy_Login>div:nth-child(1){
+    z-index: 100;
+    width:130px;
+    background-color: white;
+    text-align: center;
+}
+
+/* 구글 로그인 */
+#google{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+}
+#google:hover{
+    cursor: pointer;
+}
+#google>img{
+    width: 40px;
+    margin-left: -15px;
+}
+
+/* 카카오 로그인 */
+#kakao{
+    margin-top: 5px;
+    background-color: #FEE500;
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 250px;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+}
+#kakao:hover{
+    cursor: pointer;
+}
+#kakao>img{
+    width: 40px;
+}

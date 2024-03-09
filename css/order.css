@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+}
+
+/* display flex 지정 */
+.flex {
+    display: flex;
+}
+
+/* 글자 왼쪽 고정 */
+.text_left {
+    text-align: left;
+}
+
+/* width 100% */
+.width_100 {
+    width: 100%;
+}
+
+#main_Box {
+    justify-content: center;
+}
+
+/* 주문 상품란 */
+#category_Box {
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    width: 1200px;
+}
+
+#category_Box>span {
+    font-size: 24px;
+    padding: 30px;
+}
+
+/* 주문 상품 대제목 */
+#category_Header {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid black;
+}
+
+/* 아래는 defalut 관련 css 임 ! ! ! ! */
+/* 주문 상품 Defalut */
+#category_Defalut {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid gray;
+}
+
+/* Defalut 상품명 */
+#category_Defalut>div:nth-child(1) {
+    width: 450px;
+}
+
+/* Defalut 상품금액 */
+#category_Defalut>div:nth-child(2) {
+    width: 120px;
+}
+
+/* Defalut 수량 */
+#category_Defalut>div:nth-child(3) {
+    width: 50px;
+}
+
+/* Defalut 할인 */
+#category_Defalut>div:nth-child(4) {
+    width: 150px;
+}
+
+/* Defalut 할인금액 */
+#category_Defalut>div:nth-child(5) {
+    width: 100px;
+}
+
+/* Defalut 주문금액 */
+#category_Defalut>div:nth-child(6) {
+    width: 150px;
+}
+
+/* Defalut 배송가격 */
+#category_Defalut>div:nth-child(7) {
+    width: 180px;
+}
+
+
+/* 아래는 inner_Line 관련 css 임 ! ! ! ! */
+#category_Inner{
+    flex-direction: column;
+}
+/* inner 메인 */
+.category_Inner_Line{
+    height: 150px;
+    align-items: center;
+}
+
+/* inner 상품명 */
+.category_Inner_Line>div:nth-child(1) {
+    width: 450px;
+}
+
+.category_Inner_Line>div:nth-child(1)>div{
+    width: 300px;
+    align-items: center;
+}
+
+.category_Inner_Line>div:nth-child(1)>img {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+/* inner 상품금액 */
+.category_Inner_Line>div:nth-child(2) {
+    width: 120px;
+}
+
+/* inner 수량 */
+.category_Inner_Line>div:nth-child(3) {
+    width: 50px;
+}
+
+/* inner 할인 */
+.category_Inner_Line>div:nth-child(4) {
+    width: 150px;
+    align-items: center;
+}
+.category_Inner_Line>div:nth-child(4)>div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.category_Inner_Line>div:nth-child(4)>button{
+    width: 70px;
+    font-size: 10px;
+    margin-bottom: -20px;
+}
+
+/* inner 할인금액 */
+.category_Inner_Line>div:nth-child(5) {
+    width: 100px;
+}
+
+/* inner 주문금액 */
+.category_Inner_Line>div:nth-child(6) {
+    width: 150px;
+}
+
+/* inner 배송가격 */
+.category_Inner_Line>div:nth-child(7) {
+    width: 180px;
+}
+
+/* 배달 관련 comment css */
+#delivery_coment{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 13px;
+}
