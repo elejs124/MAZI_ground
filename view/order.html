@@ -2,6 +2,7 @@
     <head>
         <meta charset="utf-8">
         <title>Ground</title>
+        
         <script type="text/javascript" src="../JS/order.js"></script>
         <link rel="stylesheet" href="../CSS/order.css">
         <link rel="stylesheet" href="../CSS/common.css">
@@ -47,9 +48,139 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
+            <!-- 여기서부터 나눠야함 -->
+            <div id="sub_Box">
+                <div id="delivery_Payment_Box">
                     <div id="delivery">
+                        <div>
+                            <span class="text_left">배송정보</span>
+                            <div id="delivery_Box" class="flex">
+                                <div id="person_Order" class="flex under_Bar">
+                                    <div class="delivery_Box_firstLine flex">
+                                        <span>주문하시는 분</span>
+                                    </div>
+                                    <div class="flex">
+                                        <div>
+                                            <span>이성빈</span> <label><input type="checkbox" id="person_Order_btn"><span>주문자 정보 변경</span></label>
+                                        </div>
+                                        <div>
+                                            <span>a68771796@gmail.com</span>
+                                        </div>
+                                        <div>
+                                            <span>01068771796</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="delivery_Address" class="flex under_Bar width_850">
+                                    <div class="delivery_Box_firstLine flex">
+                                        <span>배송지 선택</span>
+                                    </div>
+                                    <div>
+                                        <label><input type="radio" name="Choose">기존배송지</label> 
+                                        <label><input type="radio" name="Choose">새로운배송지</label>
+                                        <button>배송지목록</button>
+                                    </div>
+                                </div>
+                                <div id="delivery_Name" class="flex under_Bar width_850">
+                                    <div class="delivery_Box_firstLine flex">
+                                        <span>*배송지명</span>
+                                    </div>
+                                    <div class="flex">
+                                        <div>
+                                            <input type="text" placeholder="배송지명을 입력해 주세요.">
+                                            <label><input type="checkbox">기본배송지로 설정</label>
+                                        </div>
+                                        <div>
+                                            <span>*10자 이내로 입력해 주세요</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="person_Receiver" class="flex under_Bar width_850">
+                                    <div class="delivery_Box_firstLine flex">
+                                        <span>*받으시는 분</span>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <span>이름</span>
+                                            <input type="text">
+                                            <label><input type="checkbox">주문하시는 분과 동일</label>
+                                        </div>
+                                        <div>
+                                            <span>전화번호(선택)</span>
+                                            <select name="tel_Fisrt_Number" id="">
+                                                <option value="default">선택</option>
+                                                <option value="02">02</option>
+                                                <option value="031">031</option>
+                                                <option value="032">032</option>
+                                                <option value="033">033</option>
+                                                <option value="041">041</option>
+                                                <option value="042">042</option>
+                                                <option value="043">043</option>
+                                                <option value="051">051</option>
+                                                <option value="052">052</option>
+                                                <option value="053">053</option>
+                                                <option value="054">054</option>
+                                                <option value="055">055</option>
+                                                <option value="061">061</option>
+                                                <option value="062">062</option>
+                                                <option value="063">063</option>
+                                                <option value="064">064</option>
+                                                <option value="070">070</option>
+                                            </select>
+                                            <input type="text">
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <span>휴대폰 번호</span>
+                                            <select name="Phone_First_Number" id="">
+                                                <option value="default">선택</option>
+                                                <option value="010">010</option>
+                                                <option value="011">011</option>
+                                                <option value="016">016</option>
+                                                <option value="017">017</option>
+                                                <option value="018">018</option>
+                                                <option value="019">019</option>
+                                            </select>
+                                            <input type="text">
+                                            <input type="text">
+                                        </div>
+                                        <div>
+                                            <span>받으실 주소</span>
+                                            <input type="text" placeholder="우편번호" disabled="true">
+                                            <button>주소찾기</button>
+                                        </div>
+                                        <div>
+                                            <input type="text" placeholder="배송지 기본주소" disabled="true">
+                                        </div>
+                                        <div>
+                                            <input type="text" placeholder="배송지 상세주소">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="delivery_Msg" class="flex under_Bar width_850">
+                                    <div class="delivery_Box_firstLine flex">
+                                        <span>배송메세지</span>
+                                    </div>
+                                    <div>
+                                        <select name="delivery_Msg_Select" id="delivery_Msg_Select">
+                                            <option value="default">선택해주세요</option>
+                                            <option value="">경비실에 넣어주삼</option>
+                                            <option value="">밖에 놔주삼</option>
+                                            <option value="direct">직접입력</option>
+                                        </select>
+                                        <input type="text" id="delivery_Msg_Direct" name="delivery_Msg_Direct">
+                                    </div>
+                                </div>
+                                <div id="delivery_fee" class="flex under_Bar width_850">
+                                    <div class="delivery_Box_firstLine flex">
+                                        <span>총 배송비</span>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                     <div id="payment">
