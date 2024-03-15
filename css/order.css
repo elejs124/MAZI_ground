@@ -27,18 +27,21 @@ body {
 #category_Box {
     flex-direction: column;
     text-align: center;
-    border: 1px solid black;
     width: 1200px;
 }
 
 #category_Box>span {
     font-size: 24px;
+    font-family: NanumGothic;
+    font-weight: 600;
     padding: 30px;
 }
 
 /* 주문 상품 대제목 */
 #category_Header {
-    font-size: 18px;
+    font-family: NanumGothic;
+    font-weight: 600;
+    font-size: 22px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1.5px solid black;
@@ -47,6 +50,8 @@ body {
 /* 아래는 defalut 관련 css 임 ! ! ! ! */
 /* 주문 상품 Defalut */
 #category_Defalut {
+    font-family: NotoSansCJKkr;
+    font-weight: 100;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1.5px solid gray;
@@ -101,6 +106,7 @@ body {
 
 /* inner 상품명 */
 .category_Inner_Line>div:nth-child(1) {
+    font-family: NotoSansCJKkr;
     width: 450px;
 }
 
@@ -164,6 +170,11 @@ body {
     margin-top: 40px;
     margin-bottom: 60px;
     font-size: 13px;
+    font-family: NanumGothic;
+}
+#delivery_coment>span{
+    font-family: NanumGothic;
+    font-weight: 600;
 }
 
 /* 주문서 아래에 있는 결제, 배송정보 전체 박스 */
@@ -173,10 +184,16 @@ body {
 
 /* 배송 정보 css */
 #delivery {
-    border: 1px solid red;
     width: 850px;
+    font-family: NanumGothic;
+    font-weight: 600;
+    font-size: 13px;
 }
-
+/* 배송정보 헤더 css */
+#delivery_header{
+    margin: 10px 10px 0px px;
+    font-size: 20px;
+}
 /* 배송정보 큰 틀 box css */
 #delivery_Box {
     flex-direction: column;
@@ -226,4 +243,10 @@ body {
     height: 260px;
 }
 /* 배송메세지 */
+#delivery_Msg{
+    height: 60px;
+}
 /* 총 배송비 */
+#delivery_fee{
+    height: 60px;
+}
