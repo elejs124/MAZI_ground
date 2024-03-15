@@ -196,6 +196,9 @@ body {
     border-bottom: 1.5px solid rgb(202, 185, 185);
     width:850px;
 }
+.margin_20px{
+    margin-left: 20px;
+}
 
 /* 주문하시는 분 css */
 #person_Order{

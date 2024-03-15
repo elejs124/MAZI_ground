@@ -2,10 +2,10 @@
     <head>
         <meta charset="utf-8">
         <title>Ground</title>
-        
-        <script type="text/javascript" src="../JS/order.js"></script>
-        <link rel="stylesheet" href="../CSS/order.css">
-        <link rel="stylesheet" href="../CSS/common.css">
+        <script type="text/javascript" src="../js/jquery-1.12.3.js"></script>
+        <script type="text/javascript" src="../js/order.js"></script>
+        <link rel="stylesheet" href="../css/order.css">
+        <link rel="stylesheet" href="../css/common.css">
     </head>
     <body>
         <div id="main_Box" class="flex">
@@ -76,7 +76,7 @@
                                         <span>배송지 선택</span>
                                     </div>
                                     <div>
-                                        <label><input type="radio" name="Choose">기존배송지</label> 
+                                        <label><input type="radio" name="Choose" class="margin_20px">기존배송지</label> 
                                         <label><input type="radio" name="Choose">새로운배송지</label>
                                         <button>배송지목록</button>
                                     </div>
@@ -87,11 +87,11 @@
                                     </div>
                                     <div class="flex">
                                         <div>
-                                            <input type="text" placeholder="배송지명을 입력해 주세요.">
+                                            <input type="text" class="margin_20px" placeholder="배송지명을 입력해 주세요.">
                                             <label><input type="checkbox">기본배송지로 설정</label>
                                         </div>
                                         <div>
-                                            <span>*10자 이내로 입력해 주세요</span>
+                                            <span class="margin_20px">*10자 이내로 입력해 주세요</span>
                                         </div>
                                     </div>
                                 </div>
@@ -101,14 +101,14 @@
                                     </div>
                                     <div>
                                         <div>
-                                            <span>이름</span>
+                                            <span class="margin_20px">이름</span>
                                             <input type="text">
                                             <label><input type="checkbox">주문하시는 분과 동일</label>
                                         </div>
                                         <div>
-                                            <span>전화번호(선택)</span>
+                                            <span class="margin_20px">전화번호(선택)</span>
                                             <select name="tel_Fisrt_Number" id="">
-                                                <option value="default">선택</option>
+                                                <option value="">선택</option>
                                                 <option value="02">02</option>
                                                 <option value="031">031</option>
                                                 <option value="032">032</option>
@@ -131,9 +131,9 @@
                                             <input type="text">
                                         </div>
                                         <div>
-                                            <span>휴대폰 번호</span>
+                                            <span class="margin_20px">휴대폰 번호</span>
                                             <select name="Phone_First_Number" id="">
-                                                <option value="default">선택</option>
+                                                <option value="">선택</option>
                                                 <option value="010">010</option>
                                                 <option value="011">011</option>
                                                 <option value="016">016</option>
@@ -145,15 +145,15 @@
                                             <input type="text">
                                         </div>
                                         <div>
-                                            <span>받으실 주소</span>
+                                            <span class="margin_20px">받으실 주소</span>
                                             <input type="text" placeholder="우편번호" disabled="true">
                                             <button>주소찾기</button>
                                         </div>
                                         <div>
-                                            <input type="text" placeholder="배송지 기본주소" disabled="true">
+                                            <input type="text" placeholder="배송지 기본주소" disabled="true" class="margin_20px">
                                         </div>
                                         <div>
-                                            <input type="text" placeholder="배송지 상세주소">
+                                            <input type="text" placeholder="배송지 상세주소" class="margin_20px">
                                         </div>
                                     </div>
                                 </div>
@@ -162,13 +162,14 @@
                                         <span>배송메세지</span>
                                     </div>
                                     <div>
-                                        <select name="delivery_Msg_Select" id="delivery_Msg_Select">
-                                            <option value="default">선택해주세요</option>
+                                        <select name="delivery_Msg_Select" id="delivery_Msg_Select" class="margin_20px">
+                                            <option value="">선택해주세요</option>
                                             <option value="">경비실에 넣어주삼</option>
                                             <option value="">밖에 놔주삼</option>
-                                            <option value="direct">직접입력</option>
+                                            <option class="" value="direct">직접입력</option>
                                         </select>
                                         <input type="text" id="delivery_Msg_Direct" name="delivery_Msg_Direct">
+                                        <!-- 나중에 예외처리 할때, 선택 안되어 있는거(defalut) 직접입력을 눌렀는데 공백인것에 대한 예외처리 꼭 해야함 ! ! -->
                                     </div>
                                 </div>
                                 <div id="delivery_fee" class="flex under_Bar width_850">
@@ -176,7 +177,7 @@
                                         <span>총 배송비</span>
                                     </div>
                                     <div>
-
+                                        <span class="margin_20px">0원</span>
                                     </div>
                                 </div>
                             </div>
