@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    min-width: 1300px;
 }
 
 /* display flex 지정 */
@@ -27,18 +28,21 @@ body {
 #category_Box {
     flex-direction: column;
     text-align: center;
-    border: 1px solid black;
     width: 1200px;
 }
 
 #category_Box>span {
     font-size: 24px;
+    font-family: NanumGothic;
+    font-weight: 600;
     padding: 30px;
 }
 
 /* 주문 상품 대제목 */
 #category_Header {
-    font-size: 18px;
+    font-family: NanumGothic;
+    font-weight: 600;
+    font-size: 22px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1.5px solid black;
@@ -47,6 +51,8 @@ body {
 /* 아래는 defalut 관련 css 임 ! ! ! ! */
 /* 주문 상품 Defalut */
 #category_Defalut {
+    font-family: NotoSansCJKkr;
+    font-weight: 100;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1.5px solid gray;
@@ -101,6 +107,7 @@ body {
 
 /* inner 상품명 */
 .category_Inner_Line>div:nth-child(1) {
+    font-family: NotoSansCJKkr;
     width: 450px;
 }
 
@@ -164,6 +171,12 @@ body {
     margin-top: 40px;
     margin-bottom: 60px;
     font-size: 13px;
+    font-family: NanumGothic;
+}
+
+#delivery_coment>span {
+    font-family: NanumGothic;
+    font-weight: 600;
 }
 
 /* 주문서 아래에 있는 결제, 배송정보 전체 박스 */
@@ -173,8 +186,16 @@ body {
 
 /* 배송 정보 css */
 #delivery {
-    border: 1px solid red;
     width: 850px;
+    font-family: NanumGothic;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* 배송정보 헤더 css */
+#delivery_header {
+    margin: 10px 10px 0px px;
+    font-size: 20px;
 }
 
 /* 배송정보 큰 틀 box css */
@@ -182,48 +203,280 @@ body {
     flex-direction: column;
 }
 
+#delivery_Box>span {
+    /* 하단 문구 */
+    margin-left: 10px;
+    margin-top: 4px;
+    color: red;
+}
+
 /* 배송정보 맨 처음 default 박스들 기본 양식들 */
-.delivery_Box_firstLine{
+.delivery_Box_firstLine {
     width: 200px;
     background-color: #F3F3F3;
     align-items: center;
 }
-.delivery_Box_firstLine>span{
+
+.delivery_Box_firstLine>span {
     margin-left: 20px;
 }
 
-.under_Bar{
+.under_Bar {
     border-bottom: 1.5px solid rgb(202, 185, 185);
-    width:850px;
+    width: 850px;
 }
-.margin_20px{
+
+.margin_20px {
     margin-left: 20px;
 }
 
 /* 주문하시는 분 css */
-#person_Order{
+#person_Order {
     border-top: 1px solid black;
-    height:130px;
+    height: 130px;
 }
-#person_Order>div:nth-child(2){
+
+#person_Order>div:nth-child(2) {
     flex-direction: column;
     justify-content: center;
 }
-#person_Order>div:nth-child(2)>div{
+
+#person_Order>div:nth-child(2)>div {
     margin: 10px;
     margin-left: 20px;
 }
+
+#person_Order>div:nth-child(2)>div:nth-child(1)>label {
+    margin-left: 10px;
+    align-items: center;
+}
+
 /* 배송지 선택 */
-#delivery_Address{
+#delivery_Address {
     height: 60px;
 }
+
+#delivery_Address>div:nth-child(2) {
+    justify-content: center;
+    align-items: center;
+}
+
+#delivery_Address>div:nth-child(2)>label {
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#delivery_Address_Btn {
+    width: 90px;
+    height: 25px;
+    background-color: white;
+    border: 2px solid rgb(202, 185, 185);
+    cursor: pointer;
+    font-size: 12px;
+    font-family: NanumGothic;
+    font-weight: 600;
+}
+
+#delivery_Address_Btn:hover {
+    background-color: rgb(202, 185, 185);
+}
+
 /* 배송지명 */
-#delivery_Name{
+#delivery_Name {
     height: 90px;
 }
+
+#delivery_Name>div:nth-child(2) {
+    flex-direction: column;
+    justify-content: center;
+}
+
+#delivery_Name>div:nth-child(2)>div:nth-child(1) {
+    /* 배송지명 1번째 div 요소 */
+    margin-bottom: 12px;
+}
+
+#delivery_Name>div:nth-child(2)>div:nth-child(1)>input[type="text"] {
+    /* 배송지명 1번째 div 요소안 text label */
+    border: 1px solid rgb(202, 185, 185);
+    height: 25px;
+    padding-left: 10px;
+}
+
+#delivery_Name>div:nth-child(2)>div:nth-child(1)>label {
+    /* 배송지명 1번째 div 요소안 라디오 label */
+    justify-content: center;
+    align-items: center;
+}
+
+.defalut_Delivery_Check {
+    margin-left: 10px;
+}
+
 /* 받으시는 분 */
-#person_Receiver{
+#person_Receiver {
     height: 260px;
 }
+
+#person_Receiver>div:nth-child(2) {
+    flex-direction: column;
+    justify-content: center;
+}
+
+#person_Receiver>div:nth-child(2)>div {
+    margin: 7px;
+    margin-left: 0px;
+    align-items: center;
+}
+
+#person_Receiver>div:nth-child(2)>div>span {
+    width: 100px;
+    display: inline-block;
+}
+
+#person_Receiver>div:nth-child(2)>div>input {
+    /* input 전체 요소 */
+    border: 1px solid rgb(202, 185, 185);
+    height: 25px;
+}
+
+#person_Receiver>div:nth-child(2)>div:nth-child(1)>input {
+    /* 이름 적는 란 */
+    width: 240px;
+}
+
+#person_Receiver>div:nth-child(2)>div:nth-child(1)>label {
+    align-items: center;
+    margin-left: 10px;
+}
+
+#person_Receiver>div:nth-child(2)>div:nth-child(2)>select {
+    /* 전화번호(선택) */
+    width: 88px;
+    height: 25px;
+    border: 1px solid rgb(202, 185, 185);
+    padding-left: 4px;
+}
+
+#person_Receiver>div:nth-child(2)>div:nth-child(2)>input {
+    /* 전화번호 */
+    width: 71px;
+}
+
+#person_Receiver>div:nth-child(2)>div:nth-child(3)>select {
+    /* 휴대폰 번호(선택) 란 */
+    width: 88px;
+    height: 25px;
+    border: 1px solid rgb(202, 185, 185);
+    padding-left: 4px;
+}
+
+#person_Receiver>div:nth-child(2)>div:nth-child(3)>input {
+    /* 휴대폰 번호 란 */
+    width: 71px;
+}
+
+#person_Receiver>div:nth-child(2)>div:nth-child(4) {
+    /* 받으실 주소 */
+    align-items: center;
+}
+
+#person_Receiver>div:nth-child(2)>div:nth-child(4)>input {
+    /* 우편 번호 적는 란 */
+    width: 120px;
+    padding-left: 7px;
+    margin-right: 2px;
+}
+
+#person_Receiver>div:nth-child(2)>div:nth-child(4)>button {
+    /* 주소 찾기 버튼 */
+    border: 2px solid rgb(202, 185, 185);
+    height: 25px;
+    width: 80px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: NanumGothic;
+    font-weight: 600;
+}
+
+#person_Receiver>div:nth-child(2)>div:nth-child(4)>button:hover {
+    background-color: rgb(202, 185, 185);
+}
+
+#person_Receiver>div:nth-child(2)>div:nth-child(5)>input {
+    /* 배송지 기본주소 */
+    padding-left: 7px;
+    margin-right: 10px;
+    width: 420px;
+}
+
+#person_Receiver>div:nth-child(2)>div:nth-child(6)>input {
+    /* 배송지 상세주소 */
+    padding-left: 7px;
+    margin-right: 10px;
+    width: 420px;
+}
+
 /* 배송메세지 */
+#delivery_Msg {
+    height: 60px;
+}
+
+#delivery_Msg>div:nth-child(2) {
+    flex-direction: column;
+    justify-content: center;
+}
+
+#delivery_Msg>div:nth-child(2)>select {
+    border: 1.9px solid rgb(202, 185, 185);
+    width: 440px;
+}
+
+#delivery_Msg_Direct {
+    width: 440px;
+    margin-top: 5px;
+}
+
 /* 총 배송비 */
+#delivery_fee {
+    height: 60px;
+}
+
+#delivery_fee>div:nth-child(2) {
+    justify-content: center;
+    align-items: center;
+}
+
+/* 결제수단 칸*/
+
+#payment_Box {
+    flex-direction: column;
+    font-family: NotoSansCJKkr;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#payment_Header {
+    /* 결제수단 헤더 */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#payment_Btn_Box {
+    flex-direction: column;
+}
+
+.payment_Btn{
+    width: 140px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    border: 2px solid gray;
+    border-radius: 9px;
+    background-color: white;
+    font-family: NotoSansCJKkr;
+    font-weight: 600;
+    cursor: pointer;
+}
