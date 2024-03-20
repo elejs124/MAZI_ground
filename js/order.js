@@ -13,8 +13,7 @@ $(function () {
     })
 
 
-    // 이하 btn 토글 기능
-
+    // btn 토글 기능
     BtnContainer = $(".payment_Btn")
     BtnContainer.click(function () {
         for (var i = 0; i < 8; i++){
