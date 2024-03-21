@@ -21,16 +21,17 @@
                             <div></div>
                         </div>
                     </div>
-                    <div class="imgae_index">
+                    <div class="image_index">
                         <div class="select" index="1"></div>
                         <div index="2"></div>
                         <div index="3"></div>
                     </div>
                 </div>
                 <div class="item_info">
-                    <div class="category_name">COFFEE</div>
+                    <div class="category_name">COFFEE ></div>
+                    <div class="item_code">코드명</div>
                     <div class="item_name">판다1</div>
-                    <div class="price">20,000</div>
+                    <div class="item_price">20,000</div>
                     <select name="item_size">
                         <option value="">사이즈를 선택해 주세요.</option>
                         <option value="s">S</option>
@@ -38,22 +39,178 @@
                         <option value="l">L</option>
                     </select>
                     <div class="button_wrap">
-                        <button>장바구니</button>
-                        <button>바로주문하기</button>
+                        <button class="basket">장바구니</button>
+                        <button class="order">바로주문하기</button>
                     </div>
                     <!-- 아래 내용들은 페이지 불러올때 span 요소 안에 있는 데이터들 -->
-                    <div class="review_info"><span>★★★★★</span> <span>0</span> Reviews</div>
+                    <div class="review_info"><span class="average">★★★★★</span> <span class="count">0</span> Reviews</div>
                     <!-- 추후 table로 변환 -->
-                    <div class="delivery_fee">배송비&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>0</span> 원</div>
+                    <table class="item_table">
+                        <tbody>
+                            <tr>
+                                <td>배송비</td>
+                                <td><span class="delivery_fee">0</span> 원</td>
+                            </tr>
+                            <tr>
+                                <td>마일리지</td>
+                                <td><span class="mileage">0</span>% 적립</td>
+                            </tr>
+                            <tr>
+                                <td>포인트</td>
+                                <td><span class="point">0</span>% 적립</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <div class="delivery_fee">배송비&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>0</span> 원</div>
                     <div class="mileage">마일리지&nbsp;&nbsp;<span>0</span>% 적립</div>
-                    <div class="delivery_fee">포인트&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>0</span>% 적립</div>
+                    <div class="delivery_fee">포인트&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>0</span>% 적립</div> -->
                 </div>
             </div>
+            <div class="other_item_header">이 상품과 비슷한 상품</div>
             <div class="other_item_wrap">
-                <div class="other_item"></div>
+                <div class="other_item">
+                    <img class="other_item_img" src="../image/dummy_data/panda1.jpg" alt="">
+                    <div class="other_item_name">아이스 아메리카노</div>
+                    <div class="other_item_price"><span id="sale_price">00,000</span> <span id="net_price">00,000</span> <span id="discount_rate">0.0%</span></div>
+                </div>
+                <div class="other_item">
+                    <img class="other_item_img" src="../image/dummy_data/duck1.png" alt="">
+                    <div class="other_item_name">아이스 아메리카노</div>
+                    <div class="other_item_price"><span id="sale_price">00,000</span> <span id="net_price">00,000</span> <span id="discount_rate">0.0%</span></div>
+                </div>
             </div>
             <div class="item_detail">
-                
+                <div class="main_page">
+                    <div class="page_index">
+                        <div class="active">상품상세정보</div>
+                        <div>리뷰(<span>0</span>)</div>
+                        <div>상품 Q&A(<span>0</span>)</div>
+                    </div>
+                    <div class="item_detail_main">
+                        <img src="../image/dummy_data/panda1.jpg" alt="">
+                        <img src="../image/dummy_data/panda1.jpg" alt="">
+                        <img src="../image/dummy_data/panda1.jpg" alt="">
+                        <img src="../image/dummy_data/panda1.jpg" alt="">
+                        <img src="../image/dummy_data/panda1.jpg" alt="">
+                    </div>
+                    <div class="item_detail_info">
+                        <div class="item_detail_header">상품고시정보</div><hr>
+                        <table>
+                            <tr>
+                                <td>품명 및 모델명</td>
+                                <td>상품상세 참조</td>
+                            </tr>
+                            <tr>
+                                <td>법에 의한 인증 및 허가</td>
+                                <td>상품상세 참조</td>
+                            </tr>
+                            <tr>
+                                <td>제조국</td>
+                                <td>상품상세 참조</td>
+                            </tr>
+                            <tr>
+                                <td>제조자</td>
+                                <td>상품상세 참조</td>
+                            </tr>
+                            <tr>
+                                <td>수입자/병행수입</td>
+                                <td>상품상세 참조</td>
+                            </tr>
+                            <tr>
+                                <td>A/S 책임자, 전화번호</td>
+                                <td>상품상세 참조</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="product_review">
+                        <div class="product_review_header">
+                            <div class="item_detail_header">상품 Q&A</div>
+                            <button class="inquire">등록하기</button>
+                        </div><hr>
+                        <div class="product_QandA_content_wrap">등록된 상품문의가 없습니다.</div>
+                    </div>
+                    <div class="product_QandA">
+                        <div class="item_detail_header">상품 Q&A</div>
+                        <div class="product_QandA_header">
+                            <div>상품에 대한 배송, 교환, 취소등의 자세한 문의사항은 고객센터 > 1:1문의를 이용하여 주시기 바랍니다.</div>
+                            <button class="inquire">문의하기</button>
+                        </div><hr>
+                        <div class="product_QandA_content_wrap">등록된 상품문의가 없습니다.</div>
+                    </div>
+                    <div class="item_detail_notice_wrap">
+                        <div class="item_detail_header">배송/교환/반품</div><hr>
+                        <table class="item_detail_notice">
+                            <tr>
+                                <td>배송기간</td>
+                                <td>
+                                    <div>- 상품의 배송비는 공급업체의 정책에 따라 다르며 공휴일 및 휴일은 배송이 불가합니다.</div>
+                                    <div>- 상품별로 상품 특성 및 배송지에 따라 배송유형 및 소요시간이 달라집니다.</div>
+                                    <div>- 동일 브랜드의 상품이라도 상품별 출고일시가 달라 각각 배송될 수 있습니다.</div>
+                                    <div>- 일부 주문상품 또는 예약상품의 경우 기본 배송일 외에 추가 배송 소요일이 발생될 수 있습니다.</div>
+                                    <div>- 도시 산간 지역은 별도의 배송비와 반품비가 추가될 수 있습니다.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>반품배송비</td>
+                                <td>
+                                    <div>- 2,500원</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>교환배송비</td>
+                                <td>- 교환상품 배송비 + 2,500원 (CJ대한통운 교환상품 수거 비용)</td>
+                            </tr>
+                            <tr>
+                                <td>교환/반품 유의사항</td>
+                                <td>
+                                    <div>- 상품 수령일로부터 7일 이내 반품/환불 가능합니다.</div>
+                                    <div>- 상품하자 이외 사이즈, 색생교환 등 단순 변심에 의한 요환/반품 택배비 교객부담으로 왕복택배비가 발생합니다.</div>
+                                    <div>- 교객 부주의로 상품이 훼손, 변경된 경우 반품 / 교환이 불가능 합니다.</div>
+                                    <div>- 주문완료 후 재고 부족 등으로 인해 주문 취소 처리가 될 수도 있는 점 양해 부탁드립니다.</div>
+                                    <div>- 임의반품은 불가하오니 반드시 고객센터나 MY Page> 주문최소/교환/반품 신청을 통해서 신청접수를 하시기 바랍니다.</div>
+                                    <div>- 특정브랜드의 삼품설명에 별도로 기입된 교환/반품/AS기준이 우선합니다.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>교환안내</td>
+                                <td>
+                                    <div>교환 가능 기간</div>
+                                    <div>교환 신청은 배송 완료 후 7일 내 가능합니다.</div>
+                                    <div> </div>
+                                    <div>교환 불가 상품</div>
+                                    <div>...</div>
+                                    <div>...</div>
+                                    <div>...</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>반품안내</td>
+                                <td>
+                                    <div>교환 가능 기간</div>
+                                    <div>교환 신청은 배송 완료 후 7일 내 가능합니다.</div>
+                                    <div> </div>
+                                    <div>교환 불가 상품</div>
+                                    <div>...</div>
+                                    <div>...</div>
+                                    <div>...</div>
+                                    <div>...</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="floating_page">
+                    <select name="item_size">
+                        <option value="">사이즈를 선택해 주세요.</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <div class="button_wrap">
+                        <button class="basket">장바구니</button>
+                        <button class="order">바로주문하기</button>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
