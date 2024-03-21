@@ -32,3 +32,8 @@
     font-family: "NotoSansCJKkr";
     src: url(../font/NotoSansCJKkr-Light.otf)
 }
+
+@font-face {
+    font-family: 'NanumGothicLight';
+    src: url(../font/NotoSansCJKkr-Light.otf);
+}

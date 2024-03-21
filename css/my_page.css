@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* 공용으로 많이 쓰이는 것들 */
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* 공통되는 폰트들 */
+.font {
+    font-family: NanumGothic;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+table {
+    margin: 0;
+    width: 900px
+}
+
+#main_Container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main_Container>span:nth-child(1) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: NanumGothic;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#main_Container>div {
+    width: 900px;
+    height: 900px;
+    border: 1px solid black;
+}
+
+/* 회원등급 란 */
+#user_Grade>td:nth-child(1) {
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    font-family: NanumGothic !important;
+    font-weight: 600;
+}
+
+#user_Grade>td:nth-child(2) {
+    width: 240px;
+    font-size: 24px;
+    font-family: default_Bold;
+    font-weight: 600;
+    color: rgb(202, 174, 16);
+}
+
+#user_Grade>td:nth-child(3) {
+    width: 170px;
+}
+
+/* 등급혜택 란 */
+#user_Benefits>td:nth-child(2) {
+    font-size: 12px;
+    font-weight: NanumGothicLight;
+    text-align: unset !important;
+    height: 120px;
+}
+
+#user_Benefits>td:nth-child(2)>ul>li {
+    margin-bottom: 10px;
+}
+
+#user_Benefits>td:nth-child(2)>ul>li:nth-child(1) {
+    margin-top: 10px;
+}
+
+/* 배송현황 란*/
+#user_Delivery>td:nth-child(1) {
+    width: 200px;
+    height: 140px;
+}
+
+#delivery_Box {
+    align-items: center;
+}
+
+#delivery_Box>span {
+    font-size: 12px;
+    color: gray;
+    margin: 18px;
+}
+
+#delivery_Box {
+    margin-left: 20px;
+}
+
+#delivery_Box>div>img {
+    width: 70px;
+}
+
+#delivery_Box>div>span:nth-child(2) {
+    font-size: 11px !important;
+}
+
+#delivery_Box>div>span:nth-child(3) {
+    font-size: 18px !important;
+    color: orange;
+}
+
+#delivery_Box>div>span:nth-child(3)>span {
+    font-size: 12px !important;
+    color: black;
+}
+
+#change_Box {
+    margin-left: 40px;
+    width: 110px;
+    height: 80px;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    justify-content: center;
+}
+
+#change_Box>div>span {
+    font-size: 13px !important;
+}
+
+#change_Box>div {
+    width: 100px;
+    margin-top: 5\px;
+}
+
+#change_Box>div:nth-child(2) {
+    width: 100px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#change_Box>div>span:nth-child(3) {
+    justify-content: right;
+}
+
+/* 마이페이지 란 */
