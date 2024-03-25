@@ -37,3 +37,8 @@
     font-family: 'NanumGothicLight';
     src: url(../font/NotoSansCJKkr-Light.otf);
 }
+
+@font-face{
+    font-family: 'NanumSquare_acL';
+    src: url(../font/NanumSquare_acL.ttf);
+}

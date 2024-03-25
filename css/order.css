@@ -603,4 +603,5 @@ body {
     background-color: rgb(224, 104, 23);
     color: white;
     border-radius: 6px;
+    cursor: pointer;
 }
