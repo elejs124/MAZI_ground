@@ -343,6 +343,10 @@ ol {
 	background-size: 155px 54px;
 }
 
+.logo.white {
+	background-image: url(../image/03.png);
+}
+
 .footer__logo .logo {
 	background-position: center center;
 }
@@ -512,11 +516,15 @@ ol {
 
 .header__menu ul li a {
 	font-size: 18px;
-	color: #ffffff;
+	color: #000000;
 	display: block;
 	font-weight: 600;
 	position: relative;
 	padding: 3px 0;
+}
+
+.header.index .header__menu ul li a {
+	color: #ffffff;
 }
 
 .header__menu ul li a:after {
@@ -2168,7 +2176,7 @@ ol {
 	position: absolute;
 	right: -14px;
 	top: 0;
-	content: "";
+	content: "❯";
 	font-family: "FontAwesome";
 }
 

@@ -14,18 +14,17 @@
         rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/menu.css" type="text/css">
-    <link rel="stylesheet" href="css/faq.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/menu_common.css" type="text/css">
+    <link rel="stylesheet" href="../css/faq.css" type="text/css">
     <!--헤더 푸터-->
-    <script src="./js/includeHTML.js"></script>
+    <script src="../js/includeHTML.js"></script>
 
     <script>
         //리뷰 로드
@@ -65,7 +64,7 @@
         }
 
         // 페이지 로드 시 loadMemberList 함수 호출
-        window.onload = loadFaqList;
+        //window.onload = loadFaqList;
     </script>
 
 
@@ -88,25 +87,21 @@
     <!-- Header Section Begin -->
     <header class="header">
         <div class="container">
+            <div class="logo white"></div>
             <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                    </div>
-                </div>
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li><a href="./menu.html?mnuCtyNo=1">Menu</a></li>
+                            <li><a href="../view/menu.html?mnuCtyNo=1">Menu</a></li>
                             <li><a href="#">Service</a>
                                 <ul class="dropdown">
-                                    <li><a href="./notice.html">Notice</a></li>
-                                    <li><a href="./faq.html">FAQ</a></li>
-                                    <li><a href="./inquiry.html">Q&A</a></li>
+                                    <li><a href="../view/notice.html">Notice</a></li>
+                                    <li><a href="../view/faq.html">FAQ</a></li>
+                                    <li><a href="../view/inquiry.html">Q&A</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./community.html">Blog</a></li>
-                            <li><a href="./location.html">Store</a></li>
+                            <li><a href="../view/community.html">Blog</a></li>
+                            <li><a href="../view/location.html">Store</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -124,8 +119,8 @@
                     <div class="breadcrumb__text">
                         <h2 style="margin-bottom: 10;">FAQ</h2>
                         <div class="breadcrumb__links">
-                            <a href="./index.html">Home</a>
-                            <a href="./shop.html">Service</a>
+                            <a href="../index.html">Home</a>
+                            <a href="../view/shop.html">Service</a>
                             <span>FAQ</span>
                         </div>
                     </div>
@@ -138,13 +133,13 @@
             <div class="container">
                 <ul id="menu_ul">
                     <li>
-                        <a class="nav-link" aria-current="page" href="./notice.html">공지사항</a>
+                        <a class="nav-link" aria-current="page" href="../view/notice.html">공지사항</a>
                     </li>
                     <li class="active">
                         <a class="nav-link" aria-current="page" href="#">FAQ</a>
                     </li>
                     <li>
-                        <a class="nav-link" aria-current="page" href="./inquiry.html">1대1 문의</a>
+                        <a class="nav-link" aria-current="page" href="../view/inquiry.html">1대1 문의</a>
                     </li>
                 </ul>
             </div>
@@ -186,7 +181,7 @@
 
 
     <!-- Footer Section Begin -->
-    <footer include-html="./view/footer.html"></footer>
+    <footer include-html="./footer.html"></footer>
     <!-- Footer Section End -->
 
     <!-- Search Begin -->
@@ -201,17 +196,17 @@
     <!-- Search End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/faq.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/jquery.nicescroll.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/jquery.countdown.min.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
+    <script src="../js/mixitup.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/faq.js"></script>
 </body>
 
 <script>
