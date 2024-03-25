@@ -1,3 +1,7 @@
+:root {
+    --common-margin-left: calc((100% - (70% + 290px))/2);
+}
+
 /* Common Styles */
 img {
     user-select: none;
@@ -170,7 +174,7 @@ button.order {
 
 .other_item_wrap, .other_item_header {
     align-self: flex-start;
-    margin-left: calc((100% - (70% + 290px))/2);
+    margin-left: var(--common-margin-left);
 }
 
 .other_item_header {
@@ -215,9 +219,10 @@ button.order {
 }
 
 .item_detail {
+    width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-self: flex-start;
+    margin-left: var(--common-margin-left);
 }
 
 .main_page {
@@ -250,6 +255,7 @@ button.order {
 }
 
 .item_detail_main {
+    
     margin-bottom: 40px;
 }
 
@@ -340,8 +346,9 @@ button.inquire {
 .floating_page {
     /* position: fixed; */
     width: 250px;
-    height: 100px;
+    height: 300px;
     padding: 20px;
+    background-color: #fff;
 }
 
 .floating_page select[name="item_size"] {
@@ -364,6 +371,12 @@ button.inquire {
     /* width: 30%; */
 }
 
+.floating_page_fixed {
+    position: fixed;
+    top: 30px;
+    right: var(--common-margin-left);
+}
+
 
 @media screen and (max-width: 1750px) {
     .container {
@@ -371,3 +384,5 @@ button.inquire {
         margin-left: 20px;
     }
 }
+
+/* DB: ms990918 / chldydtjr159! */
