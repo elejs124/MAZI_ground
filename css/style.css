@@ -336,9 +336,14 @@ ol {
 }
 
 .logo {
-	height: 50px;
-	background-image: url(/img/logo.png);
+	height: 100px;
+	background-image: url(../image/ground_logo.png);
 	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 155px 54px;
+}
+
+.footer__logo .logo {
 	background-position: center center;
 }
 
@@ -2034,23 +2039,6 @@ ol {
 	background: #111111;
 	padding-top: 70px;
 	padding-bottom: 70px;
-}
-
-.footer__about {
-	margin-bottom: 30px;
-}
-
-.footer__about .footer__logo {
-	margin-bottom: 30px;
-}
-
-.footer__about .footer__logo a {
-	display: inline-block;
-}
-
-.footer__about p {
-	color: #b7b7b7;
-	margin-bottom: 30px;
 }
 
 .footer__widget {
